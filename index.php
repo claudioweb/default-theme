@@ -1,15 +1,7 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-	<meta charset="UTF-8">
-	<title>Document</title>
-	<?php wp_head(); ?>
-</head>
-<body>
-	<?php get_header(); ?>
-	<?php while ( have_posts() ) : the_post() ?>
+<?php get_header(); ?>
+<?php while ( have_posts() ) : the_post() ?>
+	<div class="container">
 		<?php the_content(); ?>
-	<?php endwhile; ?>
-	<?php get_footer(); ?>
-</body>
-</html>
+	</div>
+<?php endwhile; ?>
+<?php get_footer(); ?>
